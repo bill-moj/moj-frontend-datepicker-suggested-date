@@ -651,7 +651,9 @@ export class DatePicker extends ConfigurableComponent {
     this.$dialog.style.top = `${this.$input.offsetHeight + 3}px`
 
     // get the date from the input element
-    this.inputDate = this.formattedDateFromString(this.$input.value || this.config.suggestedDate)
+    this.inputDate = this.formattedDateFromString(
+      this.$input.value || this.config.suggestedDate
+    )
     this.currentDate = this.inputDate
     this.currentDate.setHours(0, 0, 0, 0)
 
